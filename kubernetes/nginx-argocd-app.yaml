@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-application
+  name: apache-application
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/your-username/your-nginx-repo'
+    repoURL: 'https://github.com/rahulsinha-lko/Nginx-ArgoCD.git'
     targetRevision: HEAD
     path: ''
   destination:
